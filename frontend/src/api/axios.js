@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // Backend is running on port 8001
 const api = axios.create({
-    baseURL: 'http://localhost:8001',
+    baseURL: 'https://health-webapp-fastapi.onrender.com',
 });
 
 api.interceptors.request.use(
