@@ -1,0 +1,188 @@
+.dashboardContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.welcomeText {
+    font-size: 1.8rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.logoutButton {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    color: #334155;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f1f5f9;
+    padding-bottom: 0.5rem;
+}
+
+.metric {
+    margin-bottom: 1rem;
+}
+
+.metricLabel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+.progressBarBg {
+    width: 100%;
+    height: 10px;
+    background-color: #e2e8f0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progressBarFill {
+    height: 100%;
+    background-color: #3b82f6;
+    border-radius: 5px;
+    transition: width 0.5s ease-out;
+}
+
+.sleepFill {
+    background-color: #8b5cf6;
+}
+
+.reminderList {
+    list-style: none;
+    padding: 0;
+}
+
+.reminderItem {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f1f5f9;
+    color: #64748b;
+}
+
+.reminderItem:last-child {
+    border-bottom: none;
+}
+
+.tipBox {
+    background-color: #f0fdf4;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #22c55e;
+    color: #166534;
+    font-style: italic;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+}
+
+.label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #475569;
+}
+
+.input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.updateButton {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.updateButton:hover {
+    background-color: #2563eb;
+}
+
+.tableContainer {
+    overflow-x: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 1rem;
+    border-bottom: 1px solid #f1f5f9;
+    color: #1e293b;
+}
+
+.table th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+}
+
+.table tr:hover {
+    background-color: #f8fafc;
+    cursor: pointer;
+}
+
+.statusBadge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.statusSuccess {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.statusPending {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
